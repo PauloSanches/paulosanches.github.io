@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta name="description" content="Citi Cambio Exchange Ad">
+  <meta name="author" content="Ogilvy Brasil">
+
+  <title>Citi</title>
+
+  <script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="only screen" />
+
+  <script type="text/javascript">
+    function initEB(){
+        if (!EB.isInitialized()){
+            EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+        }else{
+            if (!isMobile.apple.phone && !isMobile.android.phone && !isMobile.seven_inch) {
+                SELECT.init();
+            }
+            startAd();
+        }
+    }
+
+    function startAd(){
+        document.getElementById("ogvStage").style.visibility = "visible";
+        Main.init();
+    }
+</script>
+</head>
+<body onload="initEB();">
+   <div id="ad">
+       <!-- Advertising stage -->
+        <div id="ogvStage">
+
+            <img src="images/logo.jpg" height="30" width="51" alt="" class="logo">
+            <button type="button" class="cta" id="cta"></button>
+            <img src="images/glow.png" height="24" width="53" alt="" class="effect" id="effect">
+            <div class="step1">
+                <div class="bg"></div>
+                <span class="description">
+                    <p>Need currency exchange<br>in Brazil? Run a simulation.</p>
+                    <p class="small">(approximated value)</p>
+                </span>
+
+                <form id="cambio">
+
+               <select name="selectFrom" id="selectFrom" class="prettyfied">
+                    <option value="USD" selected="selected">US$</option>
+                    <option value="GBP">£</option>
+                    <option value="EUR">€</option>
+                    <option value="BRL">R$</option>
+                  </select>
+
+                <input type="text" name="quantity" id="amount" class="input" maxlength="12">
+                <input type="submit" value="ok" id="submit" class="submit" />
+
+                <select name="selectTo" id="selectTo" class="prettyfied">
+                    <option value="USD">US$</option>
+                    <option value="GBP">£</option>
+                    <option value="EUR">€</option>
+                    <option value="BRL" selected="selected">R$</option>
+                </select>
+
+                  <span>
+                      <p id="output" class="output"></p>
+                      <p class="source">Source: Yahoo Finance.</p>
+                  </span>
+               </form>
+            </div>
+
+            <div class="step2">
+                <div class="bg"></div>
+                <p>Count on Citi.</p>
+            </div>
+
+            <div class="step3">
+                <div class="bg"></div>
+                <p>Currency exchange<br>at all branches in Brazil,<br>even for non-clients. </p>
+                <button type="button" class="replay" id="replay"></button>
+            </div>
+
+            <div id="block" class='none'></div>
+      </div>
+   </div>
+
+   <script type="text/javascript"  src="js/isMobile.js"></script>
+   <script type="text/javascript"  src="js/select.js"></script>
+   <script type="text/javascript"  src="js/main.js"></script>
+   <script  type="text/javascript" src="js/cambio.js"></script>
+</body>
+</html>

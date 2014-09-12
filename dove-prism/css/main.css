@@ -1,0 +1,68 @@
+#ogvStage {
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	height: 900px;
+}
+#portrait {
+	width: 768px;
+	height: 900px;
+	background-image: url(../img/bg.jpg);
+	background-size: 768px 900px;
+	background-repeat: no-repeat;
+}
+.container {
+	position: absolute;
+  	top: 490px;
+  	left: 250px;
+  	width: 518px;
+  	height: 392px;
+}
+.container-centralizado {
+  	top: 290px;
+  	left: 50px;
+  	-webkit-transition: all 1s ease-in-out;
+}
+.tampa {
+  	position: absolute;
+  	top: 0;
+  	left: 387px;
+}
+.tampa-saindo {
+  	opacity: 0;
+  	top: -20px;
+  	-webkit-transition: all 1s ease-in-out;
+}
+.pack {
+  	position: absolute;
+  	top: 22px;
+  	left: 381px;
+}
+.pack-inclinado {
+	  -webkit-transform: rotate(-10deg);
+	  -webkit-transition: all 1s ease-in-out;
+}
+.spray {
+	  position: absolute;
+	  top: -110px;
+	  left: -158px;
+	  width: 768px;
+	  height: 461px;
+}
+.box {
+	  position: absolute;
+	  top: 674px;
+	  left: 76px;
+}
+.assinatura {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  opacity: 0;
+	  -webkit-transform: scale(3);
+}
+.assinatura-sem-scale {
+	  opacity: 1;
+	  -webkit-transform: scale(1);
+	  -webkit-transition: all 1s ease-in-out;
+}

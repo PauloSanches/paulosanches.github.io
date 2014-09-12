@@ -1,0 +1,395 @@
+/* ==========================================================================
+   Reset Minify
+   ========================================================================== */
+   /* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;outline:0;border:0;background:transparent;vertical-align:baseline;font-size:100%;}
+   body{line-height:1;}
+   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+   nav ul{list-style:none;}
+   blockquote,q{quotes:none;}
+   blockquote:before,blockquote:after,q:before,q:after{content:none;}
+   a{margin:0;padding:0;background:transparent;vertical-align:baseline;font-size:100%;}
+   ins{background-color:#ff9;color:#000;text-decoration:none;}
+   mark{background-color:#ff9;color:#000;font-weight:bold;font-style:italic;}
+   del{text-decoration:line-through;}
+   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}
+   table{border-spacing:0;border-collapse:collapse;}
+   hr{display:block;margin:1em 0;padding:0;height:1px;border:0;border-top:1px solid #ccc;}
+   input,select{vertical-align:middle;}
+
+/* ==========================================================================
+      Prevent iOS Tap feedback
+      ========================================================================== */
+ * {
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    /*-webkit-user-select:none;*/                  /* prevent copy paste, to allow, change 'none' to 'text' */
+ }
+
+/* ==========================================================================
+   Font face
+   ========================================================================== */
+@font-face {
+    font-family: 'interstateregular';
+    src: url('../font/interstate_regular-webfont.eot');
+    src: url('../font/interstate_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/interstate_regular-webfont.woff') format('woff'),
+         url('../font/interstate_regular-webfont.ttf') format('truetype'),
+         url('../font/interstate_regular-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Common
+   ========================================================================== */
+.opacity0{
+    opacity:0;
+    -webkit-transition: opacity 1s;
+       -moz-transition: opacity 1s;
+        -ms-transition: opacity 1s;
+         -o-transition: opacity 1s;
+            transition: opacity 1s;
+}
+.opacity1{
+    opacity:1;
+    -webkit-transition: opacity 1s;
+       -moz-transition: opacity 1s;
+        -ms-transition: opacity 1s;
+         -o-transition: opacity 1s;
+            transition: opacity 1s;
+}
+
+.none {
+    display:none
+}
+
+.transparent {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.bg {
+    /*width:300px;
+    height:250px;
+    background: url(../images/bg.jpg) 3px 4px no-repeat;*/
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+#ad{
+  width:298px;
+  height:248px;
+  border: rgb(145,153,153) 1px solid;
+  overflow: hidden;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*background: url(../images/ref.jpg) no-repeat;*/
+}
+
+#ogvStage {
+    width: 300px;
+    height: 250px;
+    visibility:visible;
+    font-family: "interstateregular";
+    direction: ltr;
+    color: #ffffed;
+    background: url(../images/bg.jpg) 3px 4px no-repeat;
+    visibility:hidden;
+}
+
+ section p {
+    font-size:16px;
+}
+
+select {
+    border: 0 !important;  /*Removes border*/
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    background: transparent url(../images/select-arrow.png) 0 5px no-repeat;
+    width: 75px; /*Width of select dropdown to give space for arrow image*/
+    text-indent: 0.01px; /* Removes default arrow from firefox*/
+    text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+    color: #ffffed;
+    font-size:16px;
+    /*font-family: "interstateregular";*/
+    padding-left: 23px;
+    outline: none;
+    overflow: hidden;
+}
+
+select:focus {
+    outline: none;
+}
+
+select option {
+    color:#000;
+}
+
+select {
+    border: 0 !important;  /*Removes border*/
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    text-indent: 0.01px; /* Removes default arrow from firefox*/
+    text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+    outline: none;
+    overflow: hidden;
+    width:55px;
+}
+
+button, button:focus, button:active, button:hover {
+     border: 0 !important;  /*Removes border*/
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    cursor:pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.logo {
+    position: absolute;
+    top: 202px;
+    left: 21px;
+}
+
+.cta {
+    background: transparent url(../images/cta.jpg) no-repeat;
+    width:139px;
+    height:24px;
+    position: absolute;
+    top: 212px;
+    left: 162px;
+}
+
+.effect {
+  position: absolute;
+  top: 212px;
+  left: 290px;
+  opacity: 0.5;
+}
+
+#block {
+    position:absolute;
+    width:300px;
+    height:190px;
+    background: url(../images/fix.png);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+/* ==========================================================================
+   Step1
+   ========================================================================== */
+
+.step1 {
+    /*background: #fff;*/
+    width:300px;
+    height:250px;
+    zoom: 1;
+}
+
+.description {
+    position: absolute;
+    top:27px;
+    left:36px;
+}
+
+.small {
+    font-size:12px !important;
+    margin-top:5px;
+}
+
+/* Form
+   ========================================================================== */
+#cambio {
+    position: absolute;
+    top: 90px;
+    left: 35px;
+    z-index: 1;
+}
+
+.input {
+    border: 0 !important;  /*Removes border*/
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    width:124px;
+    height:28px;
+    border-radius: 5px;
+     font-size:16px;
+    font-family: "interstateregular";
+    padding-left: 10px;
+    color:#014380;
+    outline: none;
+}
+
+#amount {
+  position:relative;
+  /*top: 10px;*/
+  left: 7px;
+}
+
+#selectTo {
+    position:absolute;
+    top: 42px;
+    left: 0;
+}
+
+.submit {
+    background: #fff;
+    font-size:15px;
+    color:#808285;
+      border: 0 !important;  /*Removes border*/
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    border-radius: 7px;
+    width:34px;
+    height:29px;
+    padding:0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: 7px;
+}
+
+.output {
+    position:absolute;
+    top: 44px;
+    left: 85px;
+    font-size: 20px !important;
+}
+
+.source {
+    position:absolute;
+    top: 69px;
+    left: 84px;
+    font-size: 9px !important;
+}
+
+/* Form Selects
+   ========================================================================== */
+.prettyfied-select {
+  display: inline-block;
+  height: 19px;
+  width: 40px;
+  background: #eee;
+  background: url(../images/select-arrow.png) 0 7px no-repeat;
+  padding-left:15px;
+}
+
+.prettyfied-select .prettyfied-select-box, {
+  font-size: 16px;
+}
+
+.prettyfied-select .dropDown {
+  color: #000;
+  font-family: "interstateregular";
+}
+
+.prettyfied-select .prettyfied-select-box {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  line-height: 23px;
+  cursor: pointer;
+  color: #ffffed;
+  font-family: "interstateregular";
+}
+
+.prettyfied-select .prettyfied-select-box span {
+  padding-left: 8px;
+}
+
+.prettyfied-select .dropDown {
+  position: absolute;
+  z-index: 999;
+  top: 3px;
+  left: 0px;
+  min-width: 55px;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid;
+  border-top: 0;
+  background: #fff;
+  font-family: "interstateregular";
+}
+
+.prettyfied-select .prettyfied-select-box:hover,
+.prettyfied-select .prettyfied-select-box.expanded,
+.prettyfied-select .dropDown {
+  border-color: #a4a4a4;
+}
+
+.prettyfied-select .dropDown.is-hidden {
+  border-color: #ccc;
+  box-shadow: none;
+}
+
+.prettyfied-select .dropDown li {
+  display: block;
+  line-height: 10px;
+  padding: 8px 0 8px 8px;
+  cursor: pointer;
+}
+
+.prettyfied-select .dropDown li.hover {
+  background: #e5e5e5;
+}
+
+.prettyfied-select .dropDown li i {
+  display: block;
+  margin: 0 0 0 21px;
+  font-weight: normal;
+}
+
+
+
+/* ==========================================================================
+   Step 2
+   ========================================================================== */
+.step2 {
+    /*background: #fff;*/
+    zoom: 1;
+    width:300px;
+    height:250px;
+}
+
+.step2 p {
+    position:absolute;
+    top: 78px;
+    left: 35px;
+}
+
+/* ==========================================================================
+   Step 3
+   ========================================================================== */
+.step3 {
+    /*background: #fff;*/
+    zoom: 1;
+    width:300px;
+    height:250px;
+}
+
+.step3 p {
+    position:absolute;
+    top: 61px;
+    left: 35px;
+}
+
+.replay {
+    background: transparent url(../images/replay.jpg) no-repeat;
+    position:absolute;
+    width:37px;
+    height:11px;
+    top: 218px;
+    left: 116px;
+}

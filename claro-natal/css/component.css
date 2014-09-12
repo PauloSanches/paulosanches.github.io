@@ -1,0 +1,76 @@
+/* General styles for the modal */
+
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	background: #e74c3c;
+	min-height: 100%;
+}
+
+.md-modal {
+	position: absolute;
+	top: 307px;
+	left: 153px;
+	width: 697px;
+	height: 197px;
+	z-index: 2000;
+	visibility: hidden;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 1024px;
+	height: 768px;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: #fff;	
+}
+
+.md-show-overlay {
+	opacity: 0.4;
+	visibility: visible;
+	-webkit-transition: all .3s;
+}
+
+/* Content styles */
+.md-content {
+	background: #fff;
+	position: relative;
+	-webkit-border-radius: 20px;
+	width: 687px;
+	min-height: 197px;
+}
+
+.md-content img {
+	margin: 40px;
+}
+
+.md-close{
+	background-image: url(../img/landscape/close.png);
+	width: 66px;
+	height: 22px;
+	position: absolute;
+	top: 265px;
+	left: 770px;
+	visibility: hidden;	
+	z-index: 999999;
+}
+
+
+.md-show {
+	opacity: 1;
+	visibility: visible;	
+	-webkit-transition: all .3s;
+}

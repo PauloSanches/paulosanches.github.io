@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Landscape
+   ========================================================================== */
+@media only screen and (orientation : landscape) {
+	#ogvStage {
+		position: relative;
+		overflow: hidden;
+		width: 1024px;
+		height: 768px;
+	}
+	#portrait {
+		display: none;
+	}
+	.icone,
+	.titulo,
+	.info,
+	.botao {
+		position: absolute;
+	}
+	.icone {
+		z-index: 2;
+	}
+	.titulo,
+	.info {
+		opacity: 0;
+		-webkit-transition: opacity 0.8s;
+	}
+	.botoes {
+		position: absolute;
+		top: 195px;
+		left: 43px;
+	}
+	.botao-clique {
+		top: 0px;
+		left: 1px;
+	}
+	.botao-agende {
+		top: 33px;
+		left: 0px;
+	}
+	.link-facebook {
+		position: absolute;
+		top: 676px;
+		left: 616px;
+	}
+	.link-saiba-mais {
+		position: absolute;
+		top: 676px;
+		left: 706px;
+	}
+
+	/* City Safety */
+	.city {
+		position: absolute;
+		top: 399px;
+		left: 98px;
+	}
+	.icone-city {
+		top: -9px;
+		left: -15px;
+	}
+	.titulo-city {
+		left: -46px;
+		top: -10px;
+	}
+
+	/* Tração integral */
+	.tracao {
+		position: absolute;
+		top: 489px;
+		left: 280px;
+	}
+	.icone-tracao {
+		top: -9px;
+		left: -15px;
+	}
+	.titulo-tracao {
+		left: -100px;
+		top: -20px;
+	}
+
+	/* Painel digital */
+	.painel {
+		position: absolute;
+		top: 307px;
+		left: 399px;
+	}
+	.icone-painel {
+		top: 2px;
+		left: -15px;
+	}
+	.titulo-painel {
+		top: -12px;
+		left: -81px;
+	}
+
+
+	/* Teto solar */
+	.teto {
+		position: absolute;
+		top: 236px;
+		left: 622px;
+	}
+	.icone-teto {
+		top: 7px;
+		left: -15px;
+	}
+	.titulo-teto {
+		top: 1px;
+		left: -69px;
+	}
+
+	/* Design exclusivo */
+	.design {
+		position: absolute;
+		top: 445px;
+		left: 836px;
+	}
+	.icone-design {
+		top: -15px;
+		left: -8px;
+	}
+	.titulo-design {
+		top: 9px;
+		left: 44px;
+	}
+
+	/* Assentos ergonômicos */
+	.assentos {
+		position: absolute;
+		top: 320px;
+		left: 682px;
+	}
+	.icone-assentos {
+		top: 3px;
+		left: -16px;
+	}
+	.titulo-assentos {
+		top: 49px;
+		left: -7px;
+	}
+
+	/* Rodas Mefitis */
+	.rodas {
+		position: absolute;
+		top: 477px;
+		left: 719px;
+	}
+	.icone-rodas {
+		top: 3px;
+		left: -16px;
+	}
+	.titulo-rodas {
+		top: -36px;
+		left: -92px;
+	}
+
+	/* Info */
+	.info {
+		top: 556px;
+		left: 635px;
+	}
+}
+/*
+   iPad 1 & 2
+   ========================================================================== */
+@media only screen and (orientation : landscape) and (-webkit-device-pixel-ratio: 1) {
+
+}
+/*
+   iPad 3 & 4
+   ========================================================================== */
+@media only screen and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+}
+/* ==========================================================================
+   Portrait
+   ========================================================================== */
+@media only screen and (orientation : portrait) {
+	#ogvStage {
+		position: relative;
+		overflow: hidden;
+		width: 768px;
+		height: 1024px;
+	}
+	#landscape {
+		display: none;
+	}
+}
+/*
+   iPad 1 & 2
+   ========================================================================== */
+@media only screen and (orientation : portrait) and (-webkit-device-pixel-ratio: 1) {
+
+}
+/*
+   iPad 3 & 4
+   ========================================================================== */
+@media only screen and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+}

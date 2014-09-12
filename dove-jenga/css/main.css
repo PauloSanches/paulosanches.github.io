@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Landscape
+   ========================================================================== */
+@media only screen and (orientation : landscape) {
+	#ogvStage {
+		position: relative;
+		overflow: hidden;
+		width: 1024px;
+		height: 768px;
+	}
+	#portrait {
+		display: none;
+	}
+	.logo {
+		position: absolute;
+		top: 7px;
+		left: 956px;
+	}
+	.step1 {
+	}
+	.step1-um-fio {
+		position: absolute;
+		top: 128px;
+		left: 492px;
+		opacity: 0;
+	}
+	.step1-danificado {
+		position: absolute;
+		top: 177px;
+		left: 492px;
+		opacity: 0;
+	}
+	.step1-esta-torre {
+		position: absolute;
+		top: 228px;
+		left: 492px;
+		opacity: 0;
+	}
+	.step1-cheia-buracos {
+		position: absolute;
+		top: 276px;
+		left: 492px;
+		opacity: 0;
+	}
+	.step2 {
+		opacity: 0;
+	}
+	.texto-dove-reconstrucao {
+		position: absolute;
+		top: 144px;
+		left: 492px;
+	}
+	.texto-age-estrutura {
+		position: absolute;
+		top: 750px;
+		left: 500px;
+	}
+	.step3 {
+		opacity: 0;
+	}
+	.texto-reconstrucao-7dias {
+		position: absolute;
+		top: 145px;
+		left: 129px;
+	}
+	.texto-age-estrutura-assinatura {
+		position: absolute;
+		top: 745px;
+		left: 143px;
+	}
+	.botao-saiba-mais {
+		position: absolute;
+		top: 197px;
+		left: 739px;
+		z-index: 2;
+	}
+	.pack {
+		position: absolute;
+		top: 245px;
+		left: 92px;
+		z-index: 1;
+	}
+	.sequencia1,
+	.sequencia2 {
+		position: absolute;
+		top: 130px;
+	}
+	.sequencia1 {
+		left: 70px;
+	}
+	.sequencia2 {
+		left: 59px;
+	}
+}
+/*
+   iPad 1 & 2
+   ========================================================================== */
+@media only screen and (orientation : landscape) and (-webkit-device-pixel-ratio: 1) {
+
+}
+/*
+   iPad 3 & 4
+   ========================================================================== */
+@media only screen and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+}
+/* ==========================================================================
+   Portrait
+   ========================================================================== */
+@media only screen and (orientation : portrait) {
+	#ogvStage {
+		position: relative;
+		overflow: hidden;
+		width: 768px;
+		height: 1024px;
+	}
+	#landscape {
+		display: none;
+	}
+}
+/*
+   iPad 1 & 2
+   ========================================================================== */
+@media only screen and (orientation : portrait) and (-webkit-device-pixel-ratio: 1) {
+
+}
+/*
+   iPad 3 & 4
+   ========================================================================== */
+@media only screen and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+}

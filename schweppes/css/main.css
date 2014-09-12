@@ -1,0 +1,435 @@
+/* ==========================================================================
+   Reset Normilize Minify
+   ========================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}html{background:#fff;color:#000;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+/* ==========================================================================
+   Reuse / Common
+   ========================================================================== */
+#safe-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 9999;
+}
+.none {
+	display: none;
+}
+.opacity0 {
+	opacity: 0 !important;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+.opacity1 {
+	opacity: 1 !important;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+/* ==========================================================================
+   Landscape
+   ========================================================================== */
+@media only screen and (orientation : landscape) {
+	#ogvStage {
+		width: 1024px;
+		height: 768px;
+		position: relative;
+		overflow: hidden;
+	}
+	.portrait {
+		display: none;
+	}
+	.landscape {
+		background-color: #ffd302;
+		width: 1024px;
+		height: 768px;
+	}
+	.logomarca {
+		position: absolute;
+		top: 637px;
+		left: 887px;
+	}
+	.anos-separando {
+		position: absolute;
+		top: 209px;
+		left: 217px;
+	}
+	.conheca-as-latinhas {
+		position: absolute;
+		top: 209px;
+		left: 595px;
+	}
+	/* Imagem da latinha */
+	.latinha {
+		position: absolute;
+		top: 161px;
+		left: 433px;
+	}
+	/* Título da latinha */
+	.titulo-latinha {
+		position: absolute;
+		/*top: 326px;*/
+		bottom: 424px;
+		left: 596px;
+	}
+	/* Timeline */
+	.timeline-container {
+		position: absolute;
+		top: 486px;
+		left: 144px;
+		width: 737px;
+		height: 80px;
+		overflow: hidden;
+		/*border: 1px solid black;*/
+		/*background-color: red;*/
+	}
+	.timeline {
+		position: absolute;
+		top: 19px;
+		left: 23px;
+	}
+	.arraste-aqui {
+		position: absolute;
+		top: 39px;
+		left: 0;
+	}
+	/* Timeline: anos */
+	.ano1783 {
+		position: absolute;
+		top: 3px;
+		left: 9px;
+	}
+	.ano1851 {
+		position: absolute;
+		top: 3px;
+		left: 149px;
+	}
+	.ano1930 {
+		position: absolute;
+		top: 3px;
+		left: 283px;
+	}
+	.ano1950 {
+		position: absolute;
+		top: 3px;
+		left: 419px;
+	}
+	.ano1960 {
+		position: absolute;
+		top: 3px;
+		left: 555px;
+	}
+	.ano1980 {
+		position: absolute;
+		top: 3px;
+		left: 691px;
+	}
+	/* Assinatura */
+	.anos-separando-assinatura {
+		position: absolute;
+		top: 37px;
+		left: 424px;
+		opacity: 0;
+	}
+	.meninos-inventam {
+		position: absolute;
+		top: 233px;
+		left: 326px;
+		opacity: 0;
+	}
+	/* Latinhas da assinatura */
+	.assinatura-latinhas {
+		opacity: 0;
+	}
+	.assinatural1,
+	.assinatural2,
+	.assinatural3,
+	.assinatural4,
+	.assinatural5,
+	.assinatural6,
+	.assinatural7 {
+		position: absolute;
+		left: 448px;
+		opacity: 1;
+	}
+	.assinatural1 {
+		top: 335px;
+		z-index: 1;
+	}
+	.assinatural1-anima {
+		left: 188px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural2 {
+		top: 336px;
+		z-index: 2;
+	}
+	.assinatural2-anima {
+		left: 274px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural3 {
+		top: 335px;
+		z-index: 3;
+	}
+	.assinatural3-anima {
+		left: 359px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural4 {
+		top: 335px;
+		z-index: 4;
+	}
+	.assinatural5 {
+		top: 336px;
+		z-index: 3;
+	}
+	.assinatural5-anima {
+		left: 535px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural6 {
+		top: 336px;
+		z-index: 2;
+	}
+	.assinatural6-anima {
+		left: 620px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural7 {
+		top: 336px;
+		z-index: 1;
+	}
+	.assinatural7-anima {
+		left: 706px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.clique-para-ver {
+		position: absolute;
+		top: 553px;
+		left: 181px;
+		opacity: 0;
+	}
+	.clicktag {
+		position: absolute;
+		top: 200px;
+		left: 150px;
+		width: 720px;
+		height: 420px;
+		z-index: 4;
+	}
+}
+
+/* ==========================================================================
+   Portrait
+   ========================================================================== */
+@media only screen and (orientation : portrait) {
+	#ogvStage {
+		width: 768px;
+		height: 1024px;
+		position: relative;
+		overflow: hidden;
+	}
+	.landscape {
+		display: none;
+	}
+	.portrait {
+		background-color: #ffd302;
+		width: 768px;
+		height: 1024px;
+	}
+	.logomarca {
+		position: absolute;
+		top: 35px;
+		left: 315px;
+	}
+	.anos-separando {
+		position: absolute;
+		top: 863px;
+		left: 301px;
+	}
+	.conheca-as-latinhas {
+		position: absolute;
+		top: 264px;
+		left: 239px;
+	}
+	/* Latinhas */
+	.latinha1783 {
+		position: absolute;
+		top: 359px;
+		left: 302px;
+	}
+	.titulo1783 {
+		position: absolute;
+		top: 583px;
+		left: 302px;
+	}
+	/* Imagem da latinha */
+	.latinha {
+		position: absolute;
+		top: 359px;
+		left: 332px;
+	
+		width: 109px;
+}
+	/* Título da latinha */
+	.titulo-latinha {
+		position: absolute;
+		/*top: 583px;*/
+		bottom: 421px;
+		left: 302px;
+	}
+	/* Posição "left" dos títulos das latinhas:
+		- 1783-titulo = 302px;
+		- 1851-titulo = 274px;
+		- 1930-titulo = 303px;
+		- 1950-titulo = 259px;
+		- 1960-titulo = 267px;
+		- 1980-titulo = 278px;
+	*/
+	/* Timeline */
+	.timeline-container {
+		position: absolute;
+		top: 690px;
+		left: 64px;
+		width: 642px;
+		height: 70px;
+		overflow: hidden;
+		/*border: 1px solid black;*/
+		/*background-color: red; */
+	}
+	.timeline {
+		position: absolute;
+		top: 2px;
+		left: 8px;
+	}
+	.arraste-aqui {
+		position: absolute;
+		top: 34px;
+		left: 0;
+	}
+	/* Timeline: anos */
+	.ano1783 {
+		position: absolute;
+		top: 3px;
+		left: 8px;
+	}
+	.ano1851 {
+		position: absolute;
+		top: 3px;
+		left: 130px;
+	}
+	.ano1930 {
+		position: absolute;
+		top: 3px;
+		left: 247px;
+	}
+	.ano1950 {
+		position: absolute;
+		top: 3px;
+		left: 365px;
+	}
+	.ano1960 {
+		position: absolute;
+		top: 3px;
+		left: 484px;
+	}
+	.ano1980 {
+		position: absolute;
+		top: 3px;
+		left: 602px;
+	}
+	/* Assinatura */
+	.meninos-inventam {
+		position: absolute;
+		top: 313px;
+		left: 184px;
+		opacity: 0;
+	}
+	.latinhas-lado-a-lado {
+		position: absolute;
+		top: 454px;
+		left: 60px;
+		opacity: 0;
+	}
+	/* Latinhas da assinatura */
+	.assinatura-latinhas {
+		opacity: 0;
+	}
+	.assinatural1,
+	.assinatural2,
+	.assinatural3,
+	.assinatural4,
+	.assinatural5,
+	.assinatural6,
+	.assinatural7 {
+		position: absolute;
+		left: 320px;
+		opacity: 1;
+	}
+	.assinatural1 {
+		top: 454px;
+		z-index: 1;
+	}
+	.assinatural1-anima {
+		left: 60px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural2 {
+		top: 455px;
+		z-index: 2;
+	}
+	.assinatural2-anima {
+		left: 146px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural3 {
+		top: 454px;
+		z-index: 3;
+	}
+	.assinatural3-anima {
+		left: 231px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural4 {
+		top: 454px;
+		z-index: 4;
+	}
+	.assinatural5 {
+		top: 455px;
+		z-index: 3;
+	}
+	.assinatural5-anima {
+		left: 407px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural6 {
+		top: 455px;
+		z-index: 2;
+	}
+	.assinatural6-anima {
+		left: 492px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.assinatural7 {
+		top: 455px;
+		z-index: 1;
+	}
+	.assinatural7-anima {
+		left: 578px;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+	.clique-para-ver {
+		position: absolute;
+		top: 672px;
+		left: 53px;
+		opacity: 0;
+	}
+	.clicktag {
+		position: absolute;
+		top: 250px;
+		left: 40px;
+		width: 680px;
+		height: 500px;
+		z-index: 4;
+	}
+}
+

@@ -1,0 +1,414 @@
+/* ==========================================================================
+   Reset Normilize Minify
+   ========================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}html{background:#fff;color:#000;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+/* ==========================================================================
+   Reuse / Common
+   ========================================================================== */
+* {
+   -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+   -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+   -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+   -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+#safe-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+}
+/* ==========================================================================
+   Landscape
+   ========================================================================== */
+@media only screen and (orientation : landscape) {
+    #ogvStage {
+        width: 1024px;
+        height: 768px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #portrait {
+      display: none;
+    }
+
+    #landscape {
+      background-image: url(../img/landscape/bg.jpg);
+      width: 1024px;
+      height: 768px;
+    }
+
+    .moon-scene {
+      top: 122px;
+      left: 689px;
+      position: absolute;
+    }
+
+    .moon {
+      position: absolute;
+      z-index: 3;
+      -webkit-transform: translatez(0);
+    }
+
+    .info {
+      position: absolute;
+      z-index: 6;
+    }
+
+    .logo {
+      background-image: url(../img/landscape/logo.png);
+      width: 125px;
+      height: 125px;
+      position: absolute;
+      top: 46px;
+      left: 46px;
+      z-index: 6;
+    }
+
+    .internet-movel {
+      background-image: url(../img/landscape/internet_movel.png);
+      width: 870px;
+      height: 250px;
+      position: absolute;
+      top: 206px;
+      left: 85px;
+    }
+
+    .row-left {
+      background-image: url(../img/landscape/row_left.png);
+      width: 30px;
+      height: 45px;
+      position: absolute;
+      top: 503px;
+      left: 428px;
+      z-index: 5;
+    }
+
+    .row-right {
+      background-image: url(../img/landscape/row_right.png);
+      width: 30px;
+      height: 45px;
+      position: absolute;
+      top: 503px;
+      left: 566px;
+      z-index: 5;
+    }
+
+    .ipad {
+      background-image: url(../img/landscape/ipad.png);
+      width: 93px;
+      height: 65px;
+      position: absolute;
+      top: 493px;
+      left: 466px;
+      z-index: 5;
+    }
+
+    .agite-para-ver {
+      background-image: url(../img/landscape/agite_para_ver.png);
+      width: 192px;
+      height: 18px;
+      position: absolute;
+      top: 577px;
+      left: 416px;
+      z-index: 5;
+    }
+
+    .instructions {
+      background-image: url(../img/landscape/instrucoes.png);
+      width: 478px;
+      height: 48px;
+      position: absolute;
+      top: 584px;
+      left: 277px;
+      opacity: 0;
+      z-index: 5;
+    }
+
+    .skip {
+      background-image: url(../img/landscape/sair.png);
+      width: 77px;
+      height: 77px;
+      position: absolute;
+      top: 669px;
+      left: 904px;
+      opacity: 0;
+      z-index: 4;
+    }
+
+    #buildsCanvas {
+      position: absolute;
+      top: 624px;
+      left: 0;
+    }
+    #builds{
+      z-index: 1;
+    }
+    .build {
+      position: absolute;
+      top: 624px;
+      -webkit-transform: translatez(0);
+    }
+
+    .build-2 {
+      position: absolute;
+      left: 211px;
+    }
+
+    .build-3 {
+      position: absolute;
+      left: 443px;
+    }
+
+    .build-4 {
+      position: absolute;
+      left: 642px;
+    }
+
+    .build-5 {
+      position: absolute;
+      left: 831px;
+    }
+
+  canvas {
+    position: relative;;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+   .icon-4g {
+    background-image: url(../img/landscape/icon_4g.png);
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 198px;
+    left: 351px;
+    opacity: 0;
+    z-index: 5;
+   }
+
+   .icon-4g-active {
+    background-image: url(../img/landscape/icon_4g_active.png);
+    width: 350px;
+    height: 340px;
+    position: absolute;
+    top: 108px;
+    left: 248px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    pointer-events: none;
+   }
+
+   .icon-responsive {
+    background-image: url(../img/landscape/icon_responsive.png);
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 251px;
+    left: 79px;
+    opacity: 0;
+    z-index: 5;
+   }
+
+   .icon-responsive-active {
+    background-image: url(../img/landscape/icon_responsive_active.png);
+    width: 326px;
+    height: 349px;
+    position: absolute;
+    top: 161px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    pointer-events: none;
+   }
+
+   .icon-ft {
+    background-image: url(../img/landscape/icon_ft.png);
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    top: 393px;
+    left: 263px;
+    opacity: 0;
+    z-index: 5;
+   }
+
+  .icon-ft-active {
+    background-image: url(../img/landscape/icon_ft_active.png);
+    width: 308px;
+    height: 307px;
+    position: absolute;
+    top: 314px;
+    left: 172px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    pointer-events: none;
+   }
+
+   .icon-wifi {
+    background-image: url(../img/landscape/icon_wifi.png);
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 351px;
+    left: 514px;
+    opacity: 0;
+    z-index: 5;
+   }
+
+    .icon-wifi-active {
+      background-image: url(../img/landscape/icon_wifi_active.png);
+      width: 333px;
+      height: 332px;
+      position: absolute;
+      top: 264px;
+      left: 414px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 5;
+      pointer-events: none;
+     }
+
+   .icon-video {
+    background-image: url(../img/landscape/icon_video.png);
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 389px;
+    left: 703px;
+    opacity: 0;
+    z-index: 5;
+   }
+
+   .icon-video-active {
+    background-image: url(../img/landscape/icon_video_active.png);
+    width: 333px;
+    height: 332px;
+    position: absolute;
+    top: 299px;
+    left: 600px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    pointer-events: none;
+   }
+
+   .icon-arroba {
+    background-image: url(../img/landscape/icon_arroba.png);
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    top: 228px;
+    left: 804px;
+    opacity: 0;
+    z-index: 5;
+   }
+
+   .icon-arroba-active {
+    background-image: url(../img/landscape/icon_arroba_active.png);
+    width: 289px;
+    height: 288px;
+    position: absolute;
+    top: 152px;
+    left: 717px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    pointer-events: none;
+   }
+
+   .cta {
+    background-image: url(../img/landscape/cta.png);
+    width: 681px;
+    height: 52px;
+    position: absolute;
+    top: 292px;
+    left: 165px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 6;
+   }
+
+   .cta-icone {
+    background-image: url(../img/landscape/cta_icone.png);
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    top: 291px;
+    left: 357px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 6;
+   }
+
+}
+/* ==========================================================================
+   Portrait
+   ========================================================================== */
+@media only screen and (orientation : portrait) {
+    #ogvStage {
+        width: 768px;
+        height: 1024px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #portrait {
+      background-image: url(../img/portrait/bg.jpg);
+      width: 768px;
+      height: 1024px;
+    }
+
+    #landscape {
+      display: none;
+    }
+
+    .flag {
+      background-image: url(../img/portrait/bandeira.png);
+      width: 767px;
+      height: 1024px;
+      position: absolute;
+    }
+
+    .logo {
+      background-image: url(../img/portrait/logo.png);
+      width: 125px;
+      height: 125px;
+      position: absolute;
+      top: 842px;
+      left: 598px;
+    }
+}
+
+.opacity11s {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 1s;
+}
+
+
+.opacity01s {
+  opacity: 0;
+  visibility: visible;
+  -webkit-transition: all 1s;
+}
+
+.none {
+  display: none;
+}
+
+.opacity103s {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .5s;
+}
+.opacity003s {
+  opacity: 0;
+  visibility: visible;
+  -webkit-transition: all .5s;
+}

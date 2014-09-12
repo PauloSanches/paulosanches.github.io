@@ -1,0 +1,140 @@
+/* ==========================================================================
+	 Reset Normilize Minify
+	 ========================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}html{background:#fff;color:#000;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+/* ==========================================================================
+	 Reuse / Common
+	 ========================================================================== */
+#safe-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 9999;
+}
+.none {
+	display: none;
+}
+.opacity1 {
+	opacity: 1 !important;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+.opacity0 {
+	opacity: 0 !important;
+	-webkit-transition: opacity 0.2s ease-in-out;
+}
+/* ==========================================================================
+	 Landscape
+	 ========================================================================== */
+@media only screen and (orientation : landscape) {
+	#ogvStage {
+		width: 1024px;
+		height: 768px;
+		position: relative;
+		overflow: hidden;
+	}
+	.portrait {
+		display: none;
+	}
+
+	/* Tela Incial: */
+	.tela-inicial {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+	.setas-indicativas {
+		position: absolute;
+		top: 342px;
+		left: 887px;
+		z-index: 4;
+	}
+
+	/* Timeline: */
+	.timeline {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		-webkit-transform: translatez(0);
+	}
+	.touch-area {
+		position: absolute;
+		top: 0;
+		left: 88px;
+		width: 868px;
+		height: 718px;
+		/*background-color: blue;*/
+		z-index: 4;
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		-webkit-transform: translatez(0);
+	}
+
+	.seja-qual-for {
+		position: absolute;
+		top: 342px;
+		left: 36px;
+		z-index: 3;
+		-webkit-transition: opacity 0.5s ease-in-out;
+	}
+	.img-animacao2 {
+		position: absolute;
+		top: 342px;
+		left: 696px;
+		z-index: 3;
+		-webkit-transition: opacity 0.5s ease-in-out;
+	}
+
+	.fatos {
+		position: absolute;
+		left: 341px;
+		width: 5456px;
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translatez(0);
+		/*-webkit-transition: all 1s ease-in-out;*/
+	}
+	.anima {
+		-webkit-transition: all 1s ease-in-out;
+	}
+	.fatos * {
+		float: left;
+	}
+
+	.img-unica-anima1 {
+		-webkit-transform: translate3d(-341px, 0, 0);
+		-webkit-transition: all 1s ease-in-out;
+	}
+	.img-unica-anima2 {
+		-webkit-transform: translate3d(-682px, 0, 0);
+		-webkit-transition: all 1s ease-in-out;
+	}
+
+	/* Tela Final: */
+	.tela-final {
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+	 Portrait
+	 ========================================================================== */
+@media only screen and (orientation : portrait) {
+	#ogvStage {
+		width: 768px;
+		height: 1024px;
+		position: relative;
+		overflow: hidden;
+	}
+	.landscape {
+		display: none;
+	}
+}
