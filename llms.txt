@@ -9,5 +9,6 @@
 - [Brazilian Portuguese portfolio](https://paulosanches.github.io/hello/pt/): The same portfolio in Brazilian Portuguese.
 - [Detailed site guide](https://paulosanches.github.io/hello/llms.txt): A concise index of the portfolio’s public content and sources.
 - [A week at the beach. A security incident on day two.](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/): Paulo’s first-hand account of a production security incident involving Liferay Portal, architecture decisions and leadership under pressure.
+- [I flew to Brazil’s largest bank with a few bullet points as my brief.](https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/): A two-week handover in Brasília, aligning stakeholder expectations, working around a shared PC and addressing the client’s priorities after losing a night’s unpublished work. Also available in Italian and Brazilian Portuguese.
 - [LinkedIn](https://www.linkedin.com/in/paulosanches): Public contact channel.
 - [Sitemap](https://paulosanches.github.io/hello/sitemap.xml): Canonical public page URLs.
