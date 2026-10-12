@@ -4,7 +4,9 @@
 
 ## Portfolio
 
-- [Personal portfolio](https://paulosanches.github.io/hello/): Profile, experience, Field Notes, Mindset, Contributions and Certifications. Primarily in English, with original Portuguese Mindset quotes and English explanations.
+- [English portfolio](https://paulosanches.github.io/hello/): Profile, experience, Field Notes, Mindset, Contributions and Certifications. Also available in Italian and Brazilian Portuguese. Original personal quotes and official credential names are preserved, with explanations in the selected language.
+- [Italian portfolio](https://paulosanches.github.io/hello/it/): The same portfolio in Italian.
+- [Brazilian Portuguese portfolio](https://paulosanches.github.io/hello/pt/): The same portfolio in Brazilian Portuguese.
 - [Detailed site guide](https://paulosanches.github.io/hello/llms.txt): A concise index of the portfolio’s public content and sources.
 - [A week at the beach. A security incident on day two.](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/): Paulo’s first-hand account of a production security incident involving Liferay Portal, architecture decisions and leadership under pressure.
 - [LinkedIn](https://www.linkedin.com/in/paulosanches): Public contact channel.
