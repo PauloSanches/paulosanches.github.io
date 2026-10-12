@@ -1,0 +1,5 @@
+# Crawler policy for paulosanches.github.io, including the /hello/ portfolio.
+User-agent: *
+Allow: /
+
+Sitemap: https://paulosanches.github.io/hello/sitemap.xml
